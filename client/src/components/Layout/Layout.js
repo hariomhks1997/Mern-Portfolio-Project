@@ -1,4 +1,4 @@
-import React, {useState } from "react";
+import React, { useState } from "react";
 import Home from "../../pages/Home/Home";
 import { AiOutlineDoubleLeft, AiOutlineDoubleRight } from "react-icons/ai";
 import "./Layout.css";

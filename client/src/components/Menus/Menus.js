@@ -91,7 +91,7 @@ const Menus = ({ toggle }) => {
                   </Link>
                 </div>
                 <div className="nav-link">
-                  <Link
+                <Link
                     to="work"
                     spy={true}
                     smooth={true}
@@ -101,9 +101,10 @@ const Menus = ({ toggle }) => {
                     <FcPortraitMode />
                     Work Experince
                   </Link>
+                  
                 </div>
                 <div className="nav-link">
-                  <Link
+                <Link
                     to="contact"
                     spy={true}
                     smooth={true}
@@ -113,6 +114,7 @@ const Menus = ({ toggle }) => {
                     <FcBusinessContact />
                     Contact
                   </Link>
+                
                 </div>
               </div>
             </div>

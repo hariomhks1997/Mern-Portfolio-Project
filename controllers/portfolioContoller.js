@@ -9,7 +9,7 @@ const client = Sib.ApiClient.instance;
 client.authentications['api-key'].apiKey = process.env.API_KEY;
 const tranEmailApi = new Sib.TransactionalEmailsApi();
 
-const sendEmailController = (req, res) => {
+const sendEmailController = async (req, res) => {
   try {
     const { name, email, msg } = req.body;
 
@@ -21,18 +21,18 @@ const sendEmailController = (req, res) => {
       });
     }
     const sender = {
-      email:process.env.EMAIL_ID ,
-      name:process.env.NAME_ID
+      email:email,
+      name:name,
   }
   const receivers = [
       {
-          email: email
+          email: process.env.EMAIL_ID ,
       }
   ]
-  tranEmailApi.sendTransacEmail({
+  await tranEmailApi.sendTransacEmail({
     sender,
     to: receivers,
-    subject: "Reset Your password",
+    subject: "Portfolio issue",
     htmlContent: `
     <h5>Detail Information</h5>
     <ul>

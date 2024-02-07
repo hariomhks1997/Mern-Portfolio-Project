@@ -22,7 +22,7 @@ const WorkExp = () => {
               contentArrowStyle={{
                 borderRight: "7px solid  white",
               }}
-              date="2023 - present"
+              date="2024 - present"
               iconStyle={{ background: "#1e1e2c", color: "#fff" }}
               icon={<SiReact />}
             >
@@ -30,14 +30,13 @@ const WorkExp = () => {
                 Full Stack Developer
               </h3>
               <h4 className="vertical-timeline-element-subtitle">
-                xyz, pvt ltd
+                Internship
               </h4>
               <p>
-                Creative Direction, User Experience, Visual Design, Project
-                Management, Team Leading
+              I have done my internship with Sharpner.Tech from 9TH Dec 2023 to 9th JAN 2024(A Pay After Placement Program)
               </p>
             </VerticalTimelineElement>
-            <VerticalTimelineElement
+            {/* <VerticalTimelineElement
               className="vertical-timeline-element--work"
               contentStyle={{ background: "white", color: "#1e1e2c" }}
               contentArrowStyle={{
@@ -78,7 +77,7 @@ const WorkExp = () => {
                 Creative Direction, User Experience, Visual Design, Project
                 Management, Team Leading
               </p>
-            </VerticalTimelineElement>
+            </VerticalTimelineElement> */}
           </VerticalTimeline>
         </div>
       </div>
